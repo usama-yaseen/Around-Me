@@ -1,0 +1,94 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDF0F3;
+    margin: 0px;
+    padding: 0px;
+}
+
+#DataContainer {
+    max-width: 1464px;
+    margin: auto;
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+#TopNav li a i {
+    color: white;
+}
+
+#TopNav li a:hover i {
+    color: black;
+}
+
+#Left-Navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0 .5);
+    height: 100vh;
+    overflow-y: auto;
+    float: left;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.cardImg {
+    width: 120px;
+    height: 120px;
+}
+
+.LeftNav:hover {
+    border: 0;
+    border-left: 5px solid #5287F5;
+    transition: all .2s;
+}
+
+.LeftNav:hover a div i,
+.LeftNav:hover a span {
+    color: #5287F5;
+    transition: all .2s;
+}
+
+.LeftNav a div i {
+    font-size: 20px;
+}
+
+.LeftNav a div {
+    width: 25px;
+}
+
+#Center {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#Location {
+    width: 100%;
+    height: 100vh;
+    color: black;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#Location iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid purple;
+}

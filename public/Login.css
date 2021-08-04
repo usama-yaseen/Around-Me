@@ -1,0 +1,120 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    /* background-size: contain contain; */
+    width: 100%;
+}
+
+#Center {
+    background-color: rgba(250, 252, 255, .5);
+    height: 100%;
+    align-items: stretch;
+}
+
+#Left {
+    background-image: url("./Images/LogoBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 45vh;
+    align-items: stretch;
+}
+
+#Left img {
+    width: 250px;
+    height: 250px;
+}
+
+#Right {
+    min-height: 50vh;
+    box-sizing: border-box;
+    height: 90vh;
+}
+
+#Right h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#Right h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+form {
+    margin: auto;
+    width: fit-content;
+}
+
+.LoginInputs {
+    border: none;
+    border-bottom: 1px solid #1890ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    outline: none;
+    padding: 5px 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: 1.5s 0.2s ease;
+    text-indent: -100%;
+    opacity: 1;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 5px 0px 20px #1890ff;
+}
+
+footer {
+    height: 10vh;
+    font-size-adjust: 100%;
+    padding: 12px 32px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+footer a {
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+@media (max-width: 992px) {
+    #Left {
+        min-height: 30vh;
+    }
+    #Left img {
+        width: 150px;
+        height: 150px;
+    }
+    #Right {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        min-height: 40vh;
+        height: fit-content;
+    }
+    footer {
+        height: auto;
+    }
+}
+
+@media (max-height: 450px) {
+    #Right {
+        height: 400px;
+    }
+    footer {
+        height: auto;
+    }
+}

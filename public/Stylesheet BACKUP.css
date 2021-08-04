@@ -1,0 +1,340 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EDF0F3;
+}
+
+#DataContainer {
+    max-width: 1464px;
+    margin: auto;
+}
+
+#Center div {
+    position: relative;
+}
+
+#SearchForm input {
+    transition: 1.5s 0.2s ease;
+    width: 50%;
+    opacity: 0.7;
+}
+
+#SearchForm input:focus {
+    width: 100%;
+}
+
+#searchFieldLogo {
+    position: absolute;
+    right: 2.5vw;
+    top: 5px;
+}
+
+#searchFieldLogo:hover {
+    opacity: 0.5;
+}
+
+​​​​​​​ #TopNav li a i {
+    color: white;
+}
+
+#TopNav li a:hover i {
+    color: black;
+}
+
+#Left-Navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0 .5);
+    height: 100vh;
+    overflow-y: auto;
+    float: left;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.cardImg {
+    width: 120px;
+    height: 120px;
+}
+
+.LeftNav:hover {
+    border: 0;
+    border-left: 5px solid #5287F5;
+    transition: all .2s;
+}
+
+.LeftNav:hover a div i,
+.LeftNav:hover a span {
+    color: #5287F5;
+    transition: all .2s;
+}
+
+.LeftNav a div i {
+    font-size: 20px;
+}
+
+.LeftNav a div {
+    width: 25px;
+}
+
+#Right-Aside {
+    position: sticky;
+    overflow-y: auto;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+    height: 100vh;
+    float: right;
+    background-color: #EDF0F3;
+    max-width: 350px;
+    min-width: 300px;
+}
+
+#Sponsored {
+    color: #919396;
+    font-weight: 600;
+}
+
+#Add-Right-Side span {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#Add-Right-Side p {
+    font-size: 12px;
+    color: #919396;
+}
+
+#Messages {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#Right-Aside::-webkit-scrollbar {
+    width: 10px;
+}
+
+#Right-Aside::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #BCC0C4;
+    display: none;
+}
+
+#Right-Aside:hover::-webkit-scrollbar-thumb {
+    transition: all .5s;
+    display: block;
+}
+
+#Right-Aside::-webkit-scrollbar-track:hover {
+    background: #E5E8EB;
+    transition: all .5s;
+}
+
+#Message-Box {
+    overflow-y: auto;
+}
+
+#Contacts div {
+    color: #919396;
+    font-weight: 600;
+}
+
+#Message-Box {
+    overflow-y: auto;
+}
+
+#Message-Box ul li {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+#Message-Box ul li:hover {
+    background-color: #E4E6E9;
+    border-radius: 15px;
+    transition: all .2s;
+}
+
+.Message-Person-DP {
+    width: 36px;
+    height: 36px;
+    align-self: center;
+}
+
+.Message-Person-Name {
+    align-self: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(5, 5, 5);
+    margin-left: 10px;
+}
+
+#Chat-Box {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    right: 80px;
+    width: 330px;
+    height: 460px;
+    z-index: 2;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: none;
+}
+
+#ChatBoxCenter {
+    height: 360px;
+}
+
+#Chat {
+    position: relative;
+    bottom: 0px;
+    height: fit-content;
+}
+
+#Chat ul li {
+    border: none;
+}
+
+.ReceivedImage {
+    width: 35px;
+    display: inline-block;
+}
+
+.ReceivedImage img,
+.SentImage img {
+    width: 30px;
+    height: 30px;
+}
+
+.ReceivedMessage {
+    background-color: #E4E6EB;
+    width: 170px;
+    word-wrap: break-word;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.SentImage {
+    width: 35px;
+}
+
+.SentMessage {
+    background-color: #E4E6EB;
+    width: 170px;
+    word-wrap: break-word;
+    font-size: 14px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+#ChatBoxBottom input[Type="Text"] {
+    border: none;
+    border-radius: 10px;
+    background-color: #ebedf0;
+    outline: none;
+    padding: 5px 10px;
+    margin: auto;
+    width: 50px;
+    transition: all 1s;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: 1s 0.2s ease;
+    text-indent: -100%;
+    opacity: 1;
+}
+
+#ChatBoxBottom input:focus {
+    border-right: 1px solid #1890ff;
+    box-shadow: 0px 0px 5px #1890ff;
+    background-color: #F0F2F5;
+    width: 240px;
+}
+
+.MessageIcon:hover {
+    color: #BCC0C4;
+}
+
+.MessageIcon {
+    font-size: 20px;
+    color: #007BFF;
+}
+
+.Add:hover {
+    background-color: #E4E6E9;
+}
+
+#Chat-Right-Side a svg:hover {
+    background-color: #F2F2F2;
+    border-radius: 100%;
+}
+
+form {
+    margin: auto;
+    width: fit-content;
+}
+
+#Center {
+    display: inline-block;
+}
+
+#NewsFeed {
+    max-width: 600px;
+    margin: auto;
+}
+
+#CreatePost div:hover {
+    background-color: #E4E6E9;
+}
+
+#CreatPostData form {
+    width: 100%;
+}
+
+#CreatPostData textarea {
+    width: 100%;
+    border: 0;
+    outline: 0;
+}
+
+#Add-Item span {
+    color: grey;
+}
+
+#ImgUploadIcon {
+    color: red;
+}
+
+#ImgUploadIcon:hover {
+    color: grey;
+}
+
+.Post {
+    min-width: 460px;
+    max-width: 460px;
+    margin: auto;
+}
+
+.Post-Top-Img {
+    width: 48px;
+    height: 48px;
+}
+
+.PostReactions a i:hover {
+    color: blue;
+}
+
+.PostComment input {
+    background-color: #E4E6E9;
+    outline: none;
+}

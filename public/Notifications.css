@@ -1,0 +1,100 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EDF0F3;
+}
+
+#DataContainer {
+    max-width: 1464px;
+    margin: auto;
+}
+
+#SearchForm input {
+    transition: 1.5s 0.2s ease;
+    width: 50%;
+    opacity: 0.7;
+}
+
+#SearchForm input:focus {
+    width: 100%;
+}
+
+#searchFieldLogo {
+    position: absolute;
+    right: 2.5vw;
+    top: 5px;
+}
+
+#searchFieldLogo:hover {
+    opacity: 0.5;
+}
+
+#TopNav li a i {
+    color: white;
+}
+
+#TopNav li a:hover i {
+    color: black;
+}
+
+#Left-Navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0 .5);
+    height: 100vh;
+    overflow-y: auto;
+    float: left;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.cardImg {
+    width: 100px;
+    height: 100px;
+}
+
+.LeftNav:hover {
+    border: 0;
+    border-left: 5px solid #5287F5;
+    transition: all .2s;
+}
+
+.LeftNav:hover a div i,
+.LeftNav:hover a span {
+    color: #5287F5;
+    transition: all .2s;
+}
+
+.LeftNav a div i {
+    font-size: 20px;
+    /* color: white; */
+}
+
+.LeftNav a div {
+    width: 25px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: 1s 0.2s ease;
+    text-indent: -100%;
+    opacity: 1;
+}
+
+form {
+    margin: auto;
+    width: fit-content;
+}
+
+#Center {
+    display: inline-block;
+}
